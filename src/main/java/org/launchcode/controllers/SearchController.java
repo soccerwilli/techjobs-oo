@@ -11,11 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
 
+import static javax.swing.text.StyleConstants.ModelAttribute;
+
 /**
  * Created by LaunchCode
  */
 @Controller
 @RequestMapping("search")
+
 public class SearchController {
 
     private JobData jobData = JobData.getInstance();
