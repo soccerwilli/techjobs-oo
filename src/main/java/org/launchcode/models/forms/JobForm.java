@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class JobForm {
 
     @NotNull
-    @Size(min=1, message = "Name may not be empty")
+    @Size(min=1, message = "Error: Name may not be empty")
     private String name;
 
     @NotNull
@@ -28,29 +28,29 @@ public class JobForm {
         Don't forget to add getters and setters
      */
 
-    //@NotNull
+    @NotNull
     private int locationId;
 
-    //@NotNull
+    @NotNull
     private int coreCompetencyId;
 
-    //@NotNull
+    @NotNull
     private int positionTypeId;
 
     @NotNull
-    @Size(min=1, message = "Employer may not be empty")
+    @Size(min=1, message = "Error: Employer may not be empty")
     private ArrayList<Employer> employers;
 
-    //@NotNull
-    //@Size(min=1, message = "Location may not be empty")
+    @NotNull
+    @Size(min=1, message = "Error: Location may not be empty")
     private ArrayList<Location> locations;
 
-    //@NotNull
-    //@Size(min=1, message = "Core Competency may not be empty")
+    @NotNull
+    @Size(min=1, message = "Error: Core Competency may not be empty")
     private ArrayList<CoreCompetency> coreCompetencies;
 
-    //@NotNull
-    //@Size(min=1, message = "Position may not be empty")
+    @NotNull
+    @Size(min=1, message = "Error: Position may not be empty")
     private ArrayList<PositionType> positionTypes;
 
 
